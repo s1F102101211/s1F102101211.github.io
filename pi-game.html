@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>作品の詳細</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="contents.css" />
 </head>
 <body>
     <div class="container py-5">
-        <h5 class="card-title">pi-game</h5>
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="">
-                    <img src="pi-game.gif" class="card-img-top" alt="作品">
+            <div class="col-lg-12 mx-auto">
+                <div class="card">
+                    <div class="d-flex align-items-center">
+                    <img src="Image/pi-game.gif" class="card-img-top" alt="作品" style="max-width:800px;">
+                    </div>
                     <div class="card-body">
-                        <a href="https://github.com/s1F102101211/pi-game" class="btn btn-primary">git-hubへ</a>
+                        <h5 class="card-title">pi-game</h5>
+                        <a href="https://github.com/s1F102101211/pi-game" class="btn btn-primary" >git-hubへ</a>
                         <h6 class="card-title">開発物の説明</h6>
-                        <p class="card-text">私はC#を使用してアクションゲームの開発に取り組んでいます。このゲームはプレイヤーが移動しながら障害物を乗り越え、敵を倒したりアイテムをゲットしながらゴールを目指すものです。現在の開発進捗として、キャラクターの体力をUI部品を使用して表示し、プレイヤーが受けるダメージや回復に応じて体力ゲージが変化する仕組みを導入しました。また、敵やアイテムとの当たり判定も実装しました。例えば、プレイヤーが敵を上から踏みつけた場合は、敵を倒してアイテムを生成させるといった具体的な処理を実装しました。また、プレイヤーが敵に触れた場合は体力を減らすなど、ゲームの面白みを引き出すために様々なアクションを設計しました。
-                        </p>
+                        <p class="card-text">私はC#を使用してアクションゲームの開発に取り組んでいます。このゲームはプレイヤーが移動しながら障害物を乗り越え、敵を倒したりアイテムをゲットしながらゴールを目指すものです。現在の開発進捗として、キャラクターの体力をUI部品を使用して表示し、プレイヤーが受けるダメージや回復に応じて体力ゲージが変化する仕組みを導入しました。また、敵やアイテムとの当たり判定も実装しました。例えば、プレイヤーが敵を上から踏みつけた場合は、敵を倒してアイテムを生成させるといった具体的な処理を実装しました。また、プレイヤーが敵に触れた場合は体力を減らすなど、ゲームの面白みを引き出すために様々なアクションを設計しました。</p>
                         <h6 class="card-title">技術的な工夫</h6>
                         <p class="card-text">ゲームオブジェクトやコンポーネントをUnityエンジンによって管理し、必要なときに作成および破棄させることで、メモリ使用量を最適化しました。また、プレイヤーの入力や衝突判定をイベント処理ではなく、Update()メソッド内で処理することを選択しました。Update()メソッド内で処理することで、プレイヤーの入力や衝突判定がフレームごとに即座に反映されるため、ゲームの挙動をリアルタイムに制御しています。私は、このゲームを将来的にリリースすることを見据えていたため、プレイヤーの入力や衝突判定に関連する処理をUpdate()メソッド内にまとめることで、関連する処理が一箇所にまとめ、コードのメンテナンスやデバッグを容易にすることも考慮しました。</p>
-                        <a href="index.html" class="btn btn-primary">戻る</a>
+                        <a href="index.html" class="btn btn">戻る</a>
                     </div>
                 </div>
             </div>
@@ -32,3 +34,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+<style>
+    .card-title {
+        font-family: "モダン・ローマン書体", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--sub-color);
+    }
+    
+    .card-text {
+        font-family:"Univers", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+</style>

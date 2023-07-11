@@ -1,0 +1,79 @@
+/* カラースキーム */
+:root {
+    --primary-color: #EDD;
+    --sub-color: #333;
+  }
+  
+  /* レイアウト */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "モダン・ローマン書体", sans-serif;
+    color: var(--sub-color);
+    margin-bottom: 15px;
+  }
+  
+  body {
+    font-family: "Univers", sans-serif;
+  }
+  
+  /* プロフィール画像 */
+  .profile-image {
+    max-width: 15%;
+    max-height: 10%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    align-self: flex-start; 
+  }
+  
+  /* カードのスタイル */
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* ボタン */
+  .btn {
+    color: white;
+    background-color: var(--sub-color);
+    border-color: var(--sub-color);
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .nav-item{
+    text-decoration:underline;
+    text-decoration-color:white;
+  }
+  
+  h6{
+    padding: 50px 0 0 0;
+  }
+
+
+

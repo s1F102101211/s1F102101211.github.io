@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="robots" content="noindex,nofollow,noarchive" />
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">ポートフォリオ</a>
+        <a class="navbar-brand" href="#">My Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about">自己紹介</a>
+                    <a class="nav-link" href="#about">My Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">作品</a>
+                    <a class="nav-link" href="#work">Works</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">インターン先での開発経験</a>               
+                    <a class="nav-link" href="#work">Work contents of the intern</a>               
                 </li>
 
             </ul>
@@ -29,8 +31,10 @@
     </nav>
 
     <section id="about" class="py-5">
-        <div class="container">
-            <h1 class="text-center">自己紹介</h1>
+        <div class="container"  style="background-image: url('./Image/paint.jpeg');">
+            <div>
+                <h1 class="text-center" style="background-color:white" >My Portfolio</h1>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -38,17 +42,46 @@
                         <div class="card-body">
                             <h5 class="card-title">Language</h5>
                             <details>
-                            <summary>クリックして詳細をチェック</summary>
-                            <ul><p class="card-text"><li>Python　リファレンスがあればおよそのことはできる。</li>
-                                <li>HTML　リファレンスがあればおよそのことはできる。</li>
-                                <li>CSS　リファレンスがあればおよそのことはできる。</li>
-                                <li>JavaScript　リファレンスがあれば基本的なことはできる。</li>
-                                <li>C言語　授業で学習した程度</li>
-                                <li>Ocaml　授業で学習した程度</li>
-                                <li>Ruby　リファレンスがあれば基本的なことはできる。</li>
-                                <li>C#  リファレンスがあればおよそのことはできる。</li>
-                                </p><ul>
-                                </details>
+                            <summary>Click to check details</summary>
+                                <table>
+                                    <tr>
+                                    <th>言語</th>
+                                    <th>できるレベル</th>
+                                    </tr>
+                                    <tr>
+                                    <td>Python</td>
+                                    <td>リファレンスがあればおよそのことはできる。</td>
+                                    </tr>
+                                    <tr>
+                                    <td>HTML</td>
+                                    <td>リファレンスがあればおよそのことはできる。</td>
+                                    </tr>
+                                    <tr>
+                                    <td>CSS</td>
+                                    <td>リファレンスがあればおよそのことはできる。</td>
+                                    </tr>
+                                    <tr>
+                                    <td>JavaScript</td>
+                                    <td>リファレンスがあれば基本的なことはできる。</td>
+                                    </tr>
+                                    <tr>
+                                    <td>C言語</td>
+                                    <td>授業で学習した程度</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Ocaml</td>
+                                    <td>授業で学習した程度</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Ruby</td>
+                                    <td>リファレンスがあれば基本的なことはできる。</td>
+                                    </tr>
+                                    <tr>
+                                    <td>C#</td>
+                                    <td>リファレンスがあればおよそのことはできる。</td>
+                                    </tr>
+                                </table>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -57,17 +90,55 @@
                         <div class="card-body">
                             <h5 class="card-title">Competition results</h5>
                             <details>
-                                <summary>クリックして詳細をチェック</summary>
-                                <ul><p class="card-text">
-                                <li>2015年11月長崎県中学校新人大会ソフトテニス競技　準優勝(県)</li>
-                                <li>2016年4月長崎市長杯争奪　中学校スポーツ選手権大会　準優勝(市)</li>
-                                <li>2016年7月長崎県中学総合体育大会　ソフトテニス競技　準優勝(県)</li>
-                                <li>2017年4月長崎市長杯争奪　中学校スポーツ選手権大会　優勝(市)</li>
-                                <li>2017年6月長崎県中学総合体育大会　ソフトテニス競技　準優勝(県)</li>
-                                <li>2019年7月第26回九州チアリーディング選手権大会総合演技高等学校の部第三位(九州)</li>
-                                <li>2019年7月第26回九州チアリーディング選手権大会規定演技高等学校の部優勝(九州)</li>
-                                <li>2019年8月第26回全国チアリーディング選手権大会準決勝進出(全国)</li>
-                                </p><ul>
+                            <summary>Click to check details</summary>
+                                <table>
+                                    <tr>
+                                      <th>年月</th>
+                                      <th>大会名</th>
+                                      <th>成績</th>
+                                    </tr>
+                                    <tr>
+                                      <td>2015年11月</td>
+                                      <td>長崎県中学校新人大会ソフトテニス競技</td>
+                                      <td>準優勝(県)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2016年4月</td>
+                                      <td>長崎市長杯争奪中学校スポーツ選手権大会</td>
+                                      <td>準優勝(市)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2016年7月</td>
+                                      <td>長崎県中学総合体育大会ソフトテニス競技</td>
+                                      <td>準優勝(県)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2017年4月</td>
+                                      <td>長崎市長杯争奪中学校スポーツ選手権大会</td>
+                                      <td>優勝(市)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2017年6月</td>
+                                      <td>長崎県中学総合体育大会ソフトテニス競技</td>
+                                      <td>準優勝(県)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2019年7月</td>
+                                      <td>第26回九州チアリーディング選手権大会総合演技高等学校の部</td>
+                                      <td>第三位(九州)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2019年7月</td>
+                                      <td>第26回九州チアリーディング選手権大会規定演技高等学校の部</td>
+                                      <td>優勝(九州)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2019年8月</td>
+                                      <td>第26回全国チアリーディング選手権大会</td>
+                                      <td>準決勝進出(全国)</td>
+                                    </tr>
+                                </table>
+                                  
                             </details>
                         </div>
                     </div>
@@ -76,15 +147,32 @@
                     <div class="card">
                     
                         <div class="card-body">
-                            <h5 class="card-title">資格</h5>
+                            <h5 class="card-title">license</h5>
                             <details>
-                                <summary>クリックして詳細をチェック</summary>
-                            <ul><p class="card-text">
-                                <li>2014年9月 全国珠算学校連盟珠算技能検定2級</li>
-                                <li>2016年2月 全国珠算学校連盟暗算技能検定1級</li>
-                                <li>2019年11月 実用英語技能検定2級</li>
-                                <li>2022年9月 普通自動車第一種運転免許 AT限定</li>
-                                </p><ul>
+                                <summary>Click to check details</summary>
+                                    <table>
+                                        <tr>
+                                        <th>年月</th>
+                                        <th>ライセンス名</th>
+                                        </tr>
+                                        <tr>
+                                        <td>2014年9月</td>
+                                        <td>全国珠算学校連盟珠算技能検定2級</td>
+                                        </tr>
+                                        <tr>
+                                        <td>2016年2月</td>
+                                        <td>全国珠算学校連盟暗算技能検定1級</td>
+                                        </tr>
+                                        <tr>
+                                        <td>2019年11月</td>
+                                        <td>実用英語技能検定2級</td>
+                                        </tr>
+                                        <tr>
+                                        <td>2022年9月</td>
+                                        <td>普通自動車第一種運転免許 AT限定</td>
+                                        </tr>
+                                    </table>
+                                  
                             </details>
                         </div>
                     </div>
@@ -95,15 +183,15 @@
 
     <section id="work" class="py-5" style="background-color:#EDD;">
         <div class="container">
-            <h1 class="text-center">作品</h1>
+            <h1 class="text-center" style="margin-bottom:30px">Works</h1>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                     
                         <div class="card-body">
-                            <h5 class="card-title">hotpepper登録店舗の電話番号抽出</h5>
+                            <h5 class="card-title">scraping</h5>
                             <p class="card-text"></p>
-                            <a href="https://github.com/s1F102101211/scraping_hotpepper" class="btn btn-primary">詳細を見る</a>
+                            <a href="https://github.com/s1F102101211/scraping_hotpepper" class="btn">Click to check details</a>
                         </div>
                     </div>
                 </div>
@@ -111,9 +199,9 @@
                     <div class="card">
                         
                         <div class="card-body">
-                            <h5 class="card-title">アクションゲーム</h5>
+                            <h5 class="card-title">action game</h5>
                             <p class="card-text"></p>
-                            <a href="pi-game.html" class="btn btn-primary">詳細を見る</a>
+                            <a href="pi-game.html" class="btn btn">Click to check details</a>
                         </div>
                     </div>
                 </div>
@@ -122,14 +210,14 @@
     </section>
     <section id="work" class="py-5">
         <div class="container">
-            <h1 class="text-center">インターン先での開発経験</h1>
+            <h1 class="text-center" style="margin-bottom:30px">Work contents of the intern</h1>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">アンケートページ制作</h5>
                             <p class="card-text"></p>
-                            <a href="questionnaire.html" class="btn btn-primary">詳細を見る</a>
+                            <a href="questionnaire.html" class="btn btn">Click to check details</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +227,7 @@
                         <div class="card-body">
                             <h5 class="card-title">assign状況の追加</h5>
                             <p class="card-text"></p>
-                            <a href="assign.html" class="btn btn-primary">詳細を見る</a>
+                            <a href="assign.html" class="btn btn">Click to check details</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +236,7 @@
                         <div class="card-body">
                             <h5 class="card-title">請求ページの追加</h5>
                             <p class="card-text"></p>
-                            <a href="payment.html" class="btn btn-primary">詳細を見る</a>
+                            <a href="payment.html" class="btn btn">Click to check details</a>
                         </div>
                     </div>
                 </div>
@@ -162,9 +250,35 @@
             <p class="lead text-center"></p>
         </div>
     </section>
+    <footer id="work" class="py-5" style="background-color:#EDD;">
+        <div class="container-fluid">
+            <div class="row">
+            <img src="./Image/IDphoto.jpg" class="profile-image" >
+                <div class="text-center w-50" style="align-self: flex-start; ">
+                    <h1>Profile</h1>
+                    <h5></h5>
+                    <h5></h5>
+                    <h5></h5>
+                    <h5>東洋大学情報連携学部情報連携学科3年</h5>
+                    <h5>中央大学 Addicted2(ダンス) 所属<h5>
+                    <h5>エンジニアリングコース</h5>
+                    <h5>email:s1f102101211@iniad.org</h5>
+                </div>
+            </div>    
+           
+        </div>
+    </footer>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
 </body>
+
+
 </html>
