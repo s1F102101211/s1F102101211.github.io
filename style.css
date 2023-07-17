@@ -29,6 +29,9 @@
     margin-bottom: 10px;
     align-self: flex-start; 
   }
+  .pro{
+    margin-bottom: 30px;
+  }
   
   /* カードのスタイル */
   .card {
