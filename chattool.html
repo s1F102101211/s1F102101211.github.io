@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>作品の詳細</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="contents.css" />
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="card">
+                    <h5 class="card-title">メイン画面</h5>
+                    <div class="d-flex align-items-center">
+                    <img src="Image/chattool.png" class="card-img-top" alt="作品" style="max-width:800px;">
+                    <img src="Image/task_complete.png" class="card-img-top" alt="作品" style="max-width:800px;">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">開発物の説明</h6>
+                        <p class="card-text">チャットツール内のタスク機能の追加</p>
+                        <p class="card-text">約5時間のハッカソンで開発</p>
+                        <h6 class="card-title">開発内容</h6>
+                        <table border="1">
+                            <tr>
+                                <td>タスク一覧の表示</td>
+                                <td>APIからデータを取ってきて一覧にして表示</td>
+                            </tr>
+                            <tr>
+                                <td>タスク完了機能</td>
+                                <td>タスクが完了するとチェックマークを押してタスク一覧から削除</td>
+                            </tr>
+                            <tr>
+                                <td>タスクがない場合の表示</td>
+                                <td>タスクがすべて完了した場合の表示も実装</td>
+                            </tr>
+                        
+                            
+                        </table>
+
+                        <h6 class="card-title">技術的な工夫</h6>
+                        <table border="1">
+                            <tr>
+                                <td>期限の時間表示の仕方</td>
+                                <td>APIから返ってきた値をそのまま期限を表示するとUIがよくないので、関数内でユーザーが見やすいように加工してから表示させた</td>
+                            </tr>
+                            <tr>
+                                <td>タスク一覧のUI</td>
+                                <td>シンプルなデザインで使いやすさにこだわってModifierを駆使した</td>
+                            </tr>
+                            <tr>
+                                <td>タスク完了の実装</td>
+                                <td>最初の検討：True/FalseなどのBool値をデータベースに保持させて、クリックされたらTrueにするという処理
+                                    実際の実装：APIにタスク完了のステータスがわかるものがあったので、処理は重くなるが、今回5時間のハッカソンということだったのでこのAPIを利用
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>タスクがない場合にLoading表示にならないようにした</td>
+                                <td>タスクを取得する際に適切にエラーをキャッチし、タスクがない時の表示に導いた</td>
+                            </tr>
+                            
+                        </table>
+                        <h6 class="card-title">もっと時間があれば開発したかったもの</h6>
+                        <table border="1">
+                            <tr>
+                                <td>タスクに対する挙手機能</td>
+                                <td>タスクをJambordみたいに出して、自分ができそうなタスクを挙手できる機能</td>
+                            </tr>
+                            <tr>
+                                <td>最適なタスク割り当て機能</td>
+                                <td>タスクにかかりそうな時間をそれぞれが提案して、だれがどの作業をすれば、チームとして効率的に作業を進められるか検討できる機能</td>
+                            </tr>
+                            
+                        </table>
+                        <a href="index.html" class="btn btn">戻る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<style>
+    @media (max-width: 1000px) {
+    .card-img-top{
+        background-size:contain;               
+        width:35%;                            
+        height:400px;  
+        margin: 15px;
+        padding: 40px;                        
+    }}
+    @media (min-width: 1000px) {
+        .card-img-top{
+            background-size:contain;               
+            width:25%;                            
+            height:500px;  
+            margin: 15px;
+            padding: 40px;                        
+        }}
+    .card-title {
+        font-family: "モダン・ローマン書体", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--sub-color);
+    }
+    
+    .card-text {
+        font-family:"Univers", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+</style>
