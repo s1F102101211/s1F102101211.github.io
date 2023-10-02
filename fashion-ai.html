@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>作品の詳細</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="contents.css" />
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="card">
+                    <div class="d-flex align-items-center">
+                    <img src="Image/fashion-ai.png" class="card-img-top" alt="作品" style="max-width:800px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">メイン画面</h5>
+                        <a href="https://github.com/s1F102101211/fashion_ai" class="btn btn-primary" >git-hubへ</a>
+                        <h6 class="card-title">開発物の説明</h6>
+                        <p class="card-text">AIを使って手軽に洋服をデザインし、それをデジタル(メタバース)と
+                            リアルの両方で楽しむ事ができるアプリ
+                        </p>
+                        <h6 class="card-title">ニーズ</h6>
+                        <p class="card-text">
+                        「こんなデザインの洋服が欲しいけどないな・・・」「デザインスキルもないし・・・」
+                        アイデアは溢れているのに形にできないのはもったいない！
+                        </p>
+                        <h6 class="card-title">問題点</h6>
+                        <p class="card-text">ファッションデザイナーは減少している傾向にある       
+                        </p>
+                        <h6 class="card-title">解決策</h6>
+                        <ul class="card-text">
+                            <li>イラスト技術やデザイン知識がない</li>
+                            <li>画像生成AIを使おうにもプロンプトエンジニアリング技術がない</li>
+                            <p>➡誰でも簡単に洋服をデザインできるようにするサービス   </p> 
+                        </ul>   
+                        <h6 class="card-title">既存の類似サービス->SUZURI</h6>
+                        <p class="card-text">自分が作成したイラストなどを使ってオリジナルグッズを作成、販売できるサイト</p>
+                        <p class="card-text">➡SUZURIの場合作りたい製品のデザインをあらかじめ自分で用意する必要があるが、提案するサービスは画像生成AIを用いてデザインを考案する</p>
+                            
+                        
+                        
+                        
+                        <h6 class="card-title">開発内容</h6>
+                        <table border="1">
+                            <tr>
+                                <td>現在は生成系AIのAPIをこのアプリに組み込むところまで実装</td>
+                            </tr>
+                            
+                        </table>
+
+                        <h6 class="card-title">これからの開発</h6>
+                        <table border="1">
+                            <tr>
+                                <td>プロンプトを生成</td>
+                                <td>ChatGPTのAPIを用いて、画像生成AIに入力するプロンプトエンジニアリングを行う。対話型で入力するプロンプトについてのサポートをし、最終的に出力されたものをそのまま画像生成AIに入力できるようにする</td>
+                            </tr>
+                            <tr>
+                                <td>画像生成AIのAPIを用いて、アイデアを形に</td>
+                                <td>デザイナースキルのないアイデアを持っている人たちでも、イメージしている服を形にできるように画像生成AIでデザインをお手伝いする</td>
+                            </tr>
+                            <tr>
+                                <td>アウトプット方法</td>
+                                <td>現物とNFTのアウトプットでゲームの世界の自分とも同じ服を着れる！</td>
+                            </tr>
+                            
+                        </table>
+                        <a href="index.html" class="btn btn">戻る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<style>
+    .card-title {
+        font-family: "モダン・ローマン書体", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--sub-color);
+    }
+    
+    .card-text {
+        font-family:"Univers", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+</style>
