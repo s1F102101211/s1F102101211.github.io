@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>作品の詳細</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="contents.css" />
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="card">
+                    <h5 class="card-title">メイン画面</h5>
+                    <div class="d-flex align-items-center">
+                    <img src="Image/map.jpg" class="card-img-top" alt="作品" style="max-width:800px;">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">開発物の説明</h6>
+                        <p class="card-text">散歩ルート検索アプリ</p>
+                        <p class="card-text">マップは公開できないため、画像加工しております</p>
+                        <h6 class="card-title">開発内容</h6>
+                        <table border="1">
+                            <tr>
+                                <td>30minのボタンを押す</td>
+                                <td>実際はGoogleのAPIから口コミ情報を取得し、口コミの評価が高いところを優先的に組み入れた巡回経路を表示したかったが、今回は2日間の開発ということで、APIの仕様上から往復する前提での経路提案にした。経路にかかる時間を計算し、往復することも考え15分の経路を表示</td>
+                            </tr>
+                            <tr>
+                                <td>指定された時間に合わせた経路提案</td>
+                                <td>30minのボタンだけではなく押されたボタンによって適切な経路を表示</td>
+                            </tr>
+                            <tr>
+                                <td>カロリー計算</td>
+                                <td>apiからカロリーを計算して、歩いた分のカロリーを表示</td>
+                            </tr>
+                            <tr>
+                                <td>歩き終わったら、ポイントがたまる</td>
+                                <td>実際は現在地情報を取得し、目的地までたどり着いたらポイントがたまる仕組みを作りたかったが、今回は現在地取得ができなかったため、goalボタンを押すとポイントがたまる仕組みを実装</td>
+                            </tr>
+                        
+                            
+                        </table>
+
+                        <h6 class="card-title">技術的な工夫</h6>
+                        <table border="1">
+                            <tr>
+                                <td>ボタンを2回以上おしても経路が複数表示されないようにした</td>
+                                <td>30minのあと60minのボタンを押したり、複数回同じボタンがおされても複数の経路が表示されたりエラーが出たりしないようにした。</td>
+                            </tr>
+                            <tr>
+                                <td>カロリー表示のUI</td>
+                                <td>カロリーの消費量を視覚化できるように、緑の円形でカロリー消費量を視覚化した。</td>
+                            </tr>
+                            <tr>
+                                <td>タスク完了の実装</td>
+                                <td>1click,2clickなどアクションによって機能を分けることで、ズームとピン立てが同時に起こってしまうことを防ぐようにした
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        <h6 class="card-title">もっと時間があれば開発したかったもの</h6>
+                        <table border="1">
+                            <tr>
+                                <td>巡回経路の表示</td>
+                                <td>実際はGoogleのAPIから口コミ情報を取得し、口コミの評価が高いところを優先的に組み入れた巡回経路を表示したかった</td>
+                            </tr>
+                            <tr>
+                                <td>現在地情報の取得</td>
+                                <td>現在地情報を取得し、目的地までたどり着いたらポイントがたまる仕組みを作りたかった</td>
+                            </tr>
+                            <tr>
+                                <td>ポイントの商品交換画面</td>
+                                <td>たまったポイントを商品と交換する画面を作りたかった</td>
+                            </tr>
+                        </table>
+                        <a href="index.html" class="btn btn">戻る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<style>
+
+    .card-title {
+        font-family: "モダン・ローマン書体", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--sub-color);
+    }
+    
+    .card-text {
+        font-family:"Univers", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+</style>
