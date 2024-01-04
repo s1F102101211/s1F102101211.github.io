@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.title {
+  display: flex;
+  overflow: hidden;
+  color: #69ddef;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title span {
+  display: block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.title.-visible span {
+  transform: translate(0, 0);
+}
+
+.title span:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.title span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+.title span:nth-child(4) {
+  transition-delay: 0.18s;
+}
+.title span:nth-child(5) {
+  transition-delay: 0.24s;
+}
+.title span:nth-child(6) {
+  transition-delay: 0.30s;
+}
+.title span:nth-child(7) {
+  transition-delay: 0.36s;
+}
+.title span:nth-child(8) {
+  transition-delay: 0.42s;
+}
+.title span:nth-child(9) {
+  transition-delay: 0.48s;
+}
+.title span:nth-child(10) {
+  transition-delay: 0.54s;
+}
+.title span:nth-child(11) {
+  transition-delay: 0.6s;
+}
+
+body {
+  background-image: url('./Image/paint.jpeg');
+  padding: 20px;
+  font-family: "Univers", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "モダン・ローマン書体", sans-serif;
+  color: var(--sub-color);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #ceecf1;
+  color: #333;
+  padding: 20px;
+}
+.card-text {
+  font-family: "モダン・ローマン書体", sans-serif;
+}
+
+:root {
+  --primary-color: #89e8f9;
+  --sub-color: #333;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.slide-in-animation {
+  animation: slideInRight 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.btn {
+  color: white;
+  background-color: var(--sub-color);
+  border-color: var(--sub-color);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+h6{
+  padding: 50px 0 0 0;
+  font-family: "モダン・ローマン書体", sans-serif;
+}
+
