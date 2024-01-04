@@ -187,7 +187,7 @@
         </div>
     </section>
 
-    <section id="work" class="py-5" style="background-color:#EDD;">
+    <section id="work" class="py-5" style="background-color:#ceecf1;">
         <div class="container">
             <h1 class="text-center" style="margin-bottom:30px">Works</h1>
             <div class="row">
@@ -222,8 +222,19 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">fashion-ai</h5>
-                            <img src="Image/fashion-ai.png" class="card-img-top" alt="トップデザイン">
+                            <h4 class="title">
+                                <span>I</span>
+                                <span>m</span>
+                                <span>a</span>
+                                <span>g</span>
+                                <span>i</span>
+                                <span>n</span>
+                                <span>a</span>
+                                <span>t</span>
+                                <span>e</span>
+                                <span>r</span>
+                              </h4>
+                            <img src="Image/fashion-ai.gif" class="card-img-top" alt="トップデザイン">
                             <p class="card-text"></p>
                             <a href="fashion-ai.html" class="btn btn">Click to check details</a>
                         </div>
@@ -290,7 +301,7 @@
             <p class="lead text-center"></p>
         </div>
     </section>
-    <footer id="profile" class="py-5" style="background-color:#EDD;">
+    <footer id="profile" class="py-5" style="background-color:#ceecf1;">
         <div class="container-fluid">
             <div class="row">
             <img src="./Image/dance.jpg" class="profile-image m-5" >
@@ -322,3 +333,70 @@
 
 
 </html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+    .title {
+    display: flex;
+    overflow: hidden;
+    color: #69ddef;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bold;
+    }
+
+    .title span {
+    display: block;
+    transform: translate(0, 105%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    }
+
+    .title.-visible span {
+    transform: translate(0, 0);
+    }
+
+    .title span:nth-child(2) {
+    transition-delay: 0.06s;
+    }
+    .title span:nth-child(3) {
+    transition-delay: 0.12s;
+    }
+    .title span:nth-child(4) {
+    transition-delay: 0.18s;
+    }
+    .title span:nth-child(5) {
+    transition-delay: 0.24s;
+    }
+    .title span:nth-child(6) {
+    transition-delay: 0.30s;
+    }
+    .title span:nth-child(7) {
+    transition-delay: 0.36s;
+    }
+    .title span:nth-child(8) {
+    transition-delay: 0.42s;
+    }
+    .title span:nth-child(9) {
+    transition-delay: 0.48s;
+    }
+    .title span:nth-child(10) {
+    transition-delay: 0.54s;
+    }
+    .title span:nth-child(11) {
+    transition-delay: 0.6s;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        const CLASSNAME = "-visible";
+        const TIMEOUT = 1500;
+        const $target = $(".title");
+
+        setInterval(() => {
+            $target.addClass(CLASSNAME);
+            setTimeout(() => {
+                $target.removeClass(CLASSNAME);
+            }, TIMEOUT);
+        }, TIMEOUT * 2);
+    });
+</script>

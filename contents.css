@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    background-color: #EDD;
+    background-color: #ceecf1;
     color: #333;
     padding: 20px;
 }
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 :root {
-    --primary-color: #EDD;
+    --primary-color: #89e8f9;
     --sub-color: #333;
   }
 
